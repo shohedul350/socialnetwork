@@ -1,0 +1,33 @@
+{
+  "name": "socialnetwork",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "shohedul",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^4.1.2",
+    "nodemon": "^1.19.3"
+  },
+  "dependencies": {
+    "axois": "0.0.1-security",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-validator": "^6.2.0",
+    "gravatar": "^1.8.0",
+    "jsonwebtoken": "^8.5.1",
+    "jwt-decode": "^2.2.0",
+    "mongoose": "^5.7.3",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "redux-devtools-extension": "^2.13.8",
+    "request": "^2.88.0"
+  }
+}
